@@ -9,7 +9,7 @@ class Download(Task):
     Abstract class to support downloading files from S3
     """
 
-    S3_ROOT = "s3://ymdavis-csci-e-29/"
+    S3_ROOT = "s3://mathuser0/"
     LOCAL_ROOT = Parameter(default=os.path.abspath("data"))
     SHARED_RELATIVE_PATH = "pset_4/"
     S3_DOWNLOAD_PATH = os.path.join(S3_ROOT, SHARED_RELATIVE_PATH)

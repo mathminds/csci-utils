@@ -39,9 +39,9 @@ setup(
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
     ),
-    author='AUTHOR',
-    author_email='USERNAME@gmail.com',
-    url='https://github.com/csci-e-29/2019fa-csci-utils-USERNAME',
+    author='Chris Lee',
+    author_email='chris.lee@mydata.org',
+    url='https://github.com/mathuser0/csci-utils',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -60,8 +60,8 @@ setup(
         'Private :: Do Not Upload',
     ],
     project_urls={
-        'Changelog': 'https://github.com/csci-e-29/2019fa-csci-utils-USERNAME/blob/master/CHANGELOG.rst',
-        'Issue Tracker': 'https://github.com/csci-e-29/2019fa-csci-utils-USERNAME/issues',
+        'Changelog': 'https://github.com/mathuser0/csci-utils/blob/master/CHANGELOG.rst',
+        'Issue Tracker': 'https://github.com/mathuser0/csci-utils/issues',
     },
     keywords=[
         # eg: 'keyword1', 'keyword2', 'keyword3',
